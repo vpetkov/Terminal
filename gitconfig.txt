@@ -1,0 +1,74 @@
+# vim: set filetype=gitconfig:
+
+[user]
+  name = Veselin Petkov
+  email = vpetkov@me.com
+
+[github]
+  user = vpetkov
+
+[alias]
+  co = checkout
+  cb = checkout -b
+  files = show --name-only --oneline
+  remotes = remote -v
+  oneline = log --oneline --decorate -24
+  patch = add --patch
+  ammend = commit --ammend
+  last = log -1 --format=oneline --decorate
+  st = status --short
+  update = commit --all --verbose
+  commit = commit --verbose
+
+[core]
+  editor = vim
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[pager]
+  log = off
+  show = off
+  diff = off
+
+[branch]
+  autosetuprebase = always
+
+[push]
+  default = tracking
+
+[diff]
+  tool = vimdiff
+  noprefix = true
+
+[merge]
+  tool = vimdiff
+  ff = false
+
+[help]
+  autocorrect = 1
+
+[color]
+  ui = on
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+	remote = black
+
+[color "diff"]
+  meta = yellow
+  frag = yellow
+  old = red
+  new = blue
+  whitespace = red reverse
+
+[color "status"]
+  added = yellow
+  changed = yellow
+  untracked = red
+
+[color "decorate"]
+	branch = yellow
+	remoteBranch = yellow
+	HEAD = yellow
+[difftool]
+	prompt = false
