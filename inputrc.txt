@@ -30,7 +30,14 @@ set visible-stats on
 # Readline used by Bash 4.)
 set skip-completed-text on
 
+# Case-insensitive completions
+set completion-ignore-case
+
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
 set output-meta on
 set convert-meta off
+
+# Insert the copy-paste buffer at the prompt instead of the characters in it
+# to be interpreted as if typed
+set enable-bracketed-paste

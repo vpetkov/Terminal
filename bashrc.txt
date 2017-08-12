@@ -12,6 +12,7 @@ PS1='\n\d \t\n$PWD$(__git_ps1 " \033[0;33m%s\033[0m")\n '
 ### ALIASES ###
 alias bashrc='vi ~/.bash_profile && . ~/.bash_profile'
 alias vimrc='vi ~/.vimrc'
+alias inputrc='vi ~/.inputrc'
 alias gitconfig='vi ~/.gitconfig'
 alias hosts='sudo vi /etc/hosts'
 
