@@ -104,6 +104,12 @@ imap jk <ESC>
 " toggle hlsearch on/off
 map s :set hlsearch!<CR>
 
+" remap comentary back to \\
+xmap \\  <Plug>Commentary
+nmap \\  <Plug>Commentary
+omap \\  <Plug>Commentary
+nmap \\\ <Plug>CommentaryLine
+
 " Multipurpose tab key
 " If at start of line indent. Else, do completion.
 function! InsertTabWrapper()
