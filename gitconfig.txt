@@ -19,6 +19,7 @@
   st = status --short
   update = commit --all --verbose
   commit = commit --verbose
+  branches = branch --all --ignore-case --list --verbose
 
 [core]
   editor = vim
@@ -46,29 +47,30 @@
 [help]
   autocorrect = 1
 
-[color]
-  ui = on
+[difftool]
+	prompt = false
 
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-	remote = black
+[color]
+  ui = auto
 
 [color "diff"]
-  meta = yellow
-  frag = yellow
-  old = red
-  new = blue
-  whitespace = red reverse
+  meta = black
+  frag = black
+  old = magenta
+  new = cyan
+  whitespace = black reverse
 
 [color "status"]
-  added = yellow
-  changed = yellow
-  untracked = red
+  added = black reverse
+  changed = black
+  untracked = black
+
+[color "branch"]
+  current = yellow
+  local = black
+	remote = black
 
 [color "decorate"]
 	branch = yellow
 	remoteBranch = yellow
 	HEAD = yellow
-[difftool]
-	prompt = false
