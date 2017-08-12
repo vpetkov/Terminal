@@ -58,12 +58,14 @@ function title {
     echo -en "\033]0;$@\007"
 }
 
-# function f {
-#     ack -g $@ | ack $1
-# }
+# Find files by filename using ack
+function f {
+    ack -g $@ | ack $1
+}
 
 # Better search without quotes
 # Change tool var and it should work with grep, ack...
+# grep -irlC2 or ack -iC
 # Usage: a some query dir
 function a {
   tool='rgrep'
