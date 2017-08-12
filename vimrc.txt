@@ -1,6 +1,8 @@
 set nocompatible
 syntax enable
 
+let mapleader = ","              " leader
+
 set clipboard=unnamed            " Access x clipboard
 
 set mouse=a                      " Use mouse
@@ -52,9 +54,6 @@ set laststatus=2                 " Always display the status line
 "Statusline - filename hour:minutes:seconds Day Date Month Year ==== line,row, percent
 set statusline=%F%m%r%h%w\ \%{strftime(\"\%H\:\%M\:\%S\ \%a\ \%d\ \%b\ \%Y\",getftime(expand(\"\%\%\")))}\ %=%=%l,%c\ (%p%%)
 
-" leader
-let mapleader = ","
-
 " remap q
 noremap q <ESC>
 
@@ -105,9 +104,6 @@ imap jk <ESC>
 " toggle hlsearch on/off
 map s :set hlsearch!<CR>
 
-" alias for Ack command
-cabbrev a Ack
-
 " Multipurpose tab key
 " If at start of line indent. Else, do completion.
 function! InsertTabWrapper()
@@ -120,6 +116,10 @@ function! InsertTabWrapper()
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
+
+" hide non-text by making it white
+highlight LineNr ctermfg=grey
+highlight NonText ctermfg=white
 
 " highlight space errors
 :highlight ExtraWhitespace ctermbg=239
@@ -198,8 +198,5 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
-"Enable loading of filetype plugins
+" Enable loading of filetype plugins
 filetype plugin indent on
-
-highlight LineNr ctermfg=grey
-highlight NonText ctermfg=white
