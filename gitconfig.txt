@@ -15,7 +15,6 @@
   last = log -1 --format=oneline --decorate
   st = status --short
   update = commit --all --verbose
-  commit = commit --verbose
   branches = branch --all --ignore-case --list --verbose
 [core]
   editor = /usr/bin/vi
@@ -58,3 +57,5 @@
 	branch = yellow
 	remoteBranch = yellow
 	HEAD = yellow
+[commit]
+	verbose = true
