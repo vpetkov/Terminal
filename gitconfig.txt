@@ -22,7 +22,7 @@
   branches = branch --all --ignore-case --list --verbose
 
 [core]
-  editor = vim
+  editor = /usr/bin/vi
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [pager]
@@ -54,7 +54,7 @@
   ui = auto
 
 [color "diff"]
-  meta = black
+  meta = yellow
   frag = black
   old = magenta
   new = cyan
