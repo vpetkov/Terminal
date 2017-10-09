@@ -1,6 +1,7 @@
 # vim: set filetype=sh:
 
 ### PATHS ###
+PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 PATH="$HOME/bin:$PATH"
 export PATH=$PATH
@@ -13,6 +14,7 @@ PS1='\n\d \t\n$PWD$(__git_ps1 " \033[0;33m%s\033[0m")\n '
 alias bashrc='vi ~/.bash_profile && . ~/.bash_profile'
 alias vimrc='vi ~/.vimrc'
 alias inputrc='vi ~/.inputrc'
+alias irbrc='vi ~/.irbrc'
 alias gitconfig='vi ~/.gitconfig'
 alias hosts='sudo vi /etc/hosts'
 
@@ -49,6 +51,9 @@ shopt -s histappend # append the history file instead overwriting
 ### GREP ###
 export GREP_OPTIONS="--color=auto"
 
+### HOMEBREW ###
+export HOMEBREW_NO_EMOJI=1
+
 ### RBENV ###
 if type rbenv > /dev/null; then
   eval "$(rbenv init -)"
@@ -84,4 +89,12 @@ function a {
 # For convenience for ruby stuff
 function def {
   a def $@
+}
+
+# Google
+function google {
+    QUERY="$@"
+    GOOGLE_URL="http://www.google.com/search?q="
+    SEARCH_QUERY=$(php -r "echo urlencode(\"$QUERY\");")
+    w3m +16 "${GOOGLE_URL}${SEARCH_QUERY}"
 }
