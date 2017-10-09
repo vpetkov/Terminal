@@ -5,6 +5,7 @@
 [github]
   user = vpetkov
 [alias]
+  git = !exec git
   co = checkout
   cb = checkout -b
   files = show --name-only --oneline
@@ -14,11 +15,14 @@
   ammend = commit --ammend
   last = log -1 --format=oneline --decorate
   st = status --short
-  update = commit --all --verbose
+  update = commit --all
   branches = branch --all --ignore-case --list --verbose
+[commit]
+  verbose = true
 [core]
   editor = /usr/bin/vi
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore
 [pager]
   log = off
   show = off
@@ -57,5 +61,3 @@
 	branch = yellow
 	remoteBranch = yellow
 	HEAD = yellow
-[commit]
-	verbose = true
