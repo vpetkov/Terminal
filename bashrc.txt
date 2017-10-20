@@ -73,12 +73,16 @@ function f {
 # Change tool var and it should work with grep, ack...
 # grep -irlC2 or ack -iC
 # Usage: a some query dir
+# Checks if last param ${!#} is a dir
+# Then uses the remaining params as a search query
+# Stripts trailing slash from dir for pretty output
+# If no dir specified, uses current dir
 function a {
   tool='rgrep'
   if [ -d "${!#}" ]; then
     arg_length=$(($#-1))
     query=${@:1:$arg_length}
-    params="\"${query}\" ${!#}"
+    params="\"${query}\" ${!#/%\/}"
   else
     params="\"${@}\" ."
   fi
