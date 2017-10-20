@@ -55,7 +55,7 @@ export GREP_OPTIONS="--color=auto"
 export HOMEBREW_NO_EMOJI=1
 
 ### RBENV ###
-if type rbenv > /dev/null; then
+if type rbenv 2> /dev/null; then
   eval "$(rbenv init -)"
 fi
 
