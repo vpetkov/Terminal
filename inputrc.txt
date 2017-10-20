@@ -31,7 +31,7 @@ set visible-stats on
 set skip-completed-text on
 
 # Case-insensitive completions
-set completion-ignore-case
+# set completion-ignore-case
 
 # Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
 set input-meta on
