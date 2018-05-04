@@ -36,6 +36,11 @@ alias py='python'
 
 alias b='bundle exec'
 
+### VIMCONFIG ###
+export VISUAL="vim"
+export VIMCONFIG="~/.vim"
+export VIMDATA="~/.vim"
+
 ### COMPLETION ###
 source ~/.git-completion.bash
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
