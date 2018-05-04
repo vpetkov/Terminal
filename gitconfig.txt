@@ -54,8 +54,8 @@
 [color "branch"]
   current = yellow
   local = black
-	remote = black
+  remote = black
 [color "decorate"]
-	branch = yellow
-	remoteBranch = yellow
-	HEAD = yellow
+  branch = yellow
+  remoteBranch = yellow
+  HEAD = yellow
