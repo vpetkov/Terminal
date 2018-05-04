@@ -7,7 +7,6 @@
 [alias]
   git = !exec git
   co = checkout
-  cb = checkout -b
   files = show --name-only --oneline
   remotes = remote -v
   oneline = log --oneline --decorate -24
