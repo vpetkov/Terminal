@@ -17,6 +17,7 @@ alias inputrc='vi ~/.inputrc'
 alias irbrc='vi ~/.irbrc'
 alias gitconfig='vi ~/.gitconfig'
 alias hosts='sudo vi /etc/hosts'
+alias sshconfig='vi ~/.ssh/config'
 
 alias ls='ls -GF'
 alias ll='ls -lh'
