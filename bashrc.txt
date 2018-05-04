@@ -50,7 +50,7 @@ source ~/.git-completion.bash
 HISTSIZE=50000
 HISTFILESIZE=$HISTSIZE
 SHELL_SESSION_HISTORY=0
-HISTIGNORE="ls*:ll:la:l:cd:gd:gg:gl*:gf:vg"
+HISTIGNORE="ls:ll:la:l:cd:gd:gg:gl*:gf:vg"
 HISTCONTROL=ignoredups:ignorespace:erasedups # do not duplicate lines
 shopt -s histappend # append the history file instead overwriting
 
