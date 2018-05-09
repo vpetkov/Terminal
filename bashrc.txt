@@ -105,3 +105,9 @@ function google {
     SEARCH_QUERY=$(php -r "echo urlencode(\"$QUERY\");")
     w3m +16 "${URL}${SEARCH_QUERY}"
 }
+
+# New note
+function note {
+  touch $1
+  open $1
+}
