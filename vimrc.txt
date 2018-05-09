@@ -110,8 +110,9 @@ nmap \\  <Plug>Commentary
 omap \\  <Plug>Commentary
 nmap \\\ <Plug>CommentaryLine
 
-" Multipurpose tab key
-" If at start of line indent. Else, do completion.
+" Multipurpose Tab Key
+" If at the start of a line, indent.
+" Else, do completion.
 function! InsertTabWrapper()
   let col = col('.') - 1
   if !col || getline('.')[col - 1] !~ '\k'
