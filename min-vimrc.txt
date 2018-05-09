@@ -33,6 +33,7 @@ noremap gr gT
 
 noremap q <ESC>
 noremap J j
+noremap K k
 
 imap jk <ESC>
 
