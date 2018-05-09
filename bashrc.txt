@@ -24,10 +24,6 @@ alias ll='ls -lh'
 alias la='ll -A'
 alias l='ls -1'
 
-alias gg='git st'
-alias gd='git diff'
-alias gl='git oneline'
-
 alias vi='vim -p'
 
 alias rgrep='grep --context=2 --ignore-case --line-number --recursive'
