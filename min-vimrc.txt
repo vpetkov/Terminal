@@ -37,9 +37,11 @@ noremap K k
 
 imap jk <ESC>
 
+autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
+autocmd FileType text,markdown,gitcommit setlocal spell
+
+" When editing a file, always jump to the last known cursor position.
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
   \ | endif
-autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
-autocmd FileType text,markdown,gitcommit setlocal spell
