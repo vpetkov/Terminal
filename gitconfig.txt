@@ -7,13 +7,13 @@
 [alias]
   git = !exec git
   co = checkout
+  s = status --short
+  l = log --oneline -24
+  d = diff
   files = show --name-only --oneline
   remotes = remote -v
-  oneline = log --oneline -24
-  patch = add --patch
   ammend = commit --ammend
   last = log -1 --format=oneline --decorate
-  st = status --short
   update = commit --all
   branches = branch --all --ignore-case --list --verbose
 [commit]
