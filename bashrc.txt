@@ -97,10 +97,9 @@ function def {
   a def $@
 }
 
-# Google with w3m
-function google {
+# duckduckgo with w3m
+function duckduckgo {
     QUERY="$@"
-    # URL="http://www.google.com/search?q="
     URL="https://duckduckgo.com/?q="
     SEARCH_QUERY=$(php -r "echo urlencode(\"$QUERY\");")
     w3m +16 "${URL}${SEARCH_QUERY}"
