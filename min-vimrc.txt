@@ -26,6 +26,9 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set smarttab
+
+set complete-=i
 
 noremap j gj
 noremap k gk
@@ -51,17 +54,3 @@ autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
   \ | endif
-
-" Multipurpose Tab Key
-" If at the start of a line, indent.
-" Else, do completion.
-function! InsertTabWrapper()
-  let col = col('.') - 1
-  if !col || getline('.')[col - 1] !~ '\k'
-    return "\<tab>"
-  else
-    return "\<c-p>"
-  endif
-endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <s-tab> <c-n>
