@@ -21,7 +21,7 @@ alias sshconfig='vi ~/.ssh/config'
 
 alias ls='ls -GF'
 alias ll='ls -lh'
-alias la='ll -A'
+alias la='ls -1A'
 alias l='ls -1'
 
 alias vi='vim -p'
