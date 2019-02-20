@@ -35,6 +35,9 @@ noremap k gk
 
 noremap gr gT
 
+nnoremap gb :bp<CR>
+nnoremap gn :bn<CR>
+
 noremap q <ESC>
 noremap J j
 noremap K k
