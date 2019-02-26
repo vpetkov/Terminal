@@ -8,7 +8,7 @@ export PATH=$PATH
 
 ### PROMPT ###
 source ~/.git-prompt.sh
-PS1='\n\n$PWD$(__git_ps1 " \033[0;33m%s\033[0m")\n '
+PS1='\n\n$PWD$(__git_ps1 " \033[0;33m├%s\033[0m")\n'
 
 ### ALIASES ###
 alias bashrc='vi ~/.bash_profile && . ~/.bash_profile'
@@ -102,7 +102,7 @@ function duckduckgo {
     QUERY="$@"
     URL="https://duckduckgo.com/?q="
     SEARCH_QUERY=$(php -r "echo urlencode(\"$QUERY\");")
-    w3m +16 "${URL}${SEARCH_QUERY}"
+    w3m -M -cols 5 +19 "${URL}${SEARCH_QUERY}"
 }
 
 # New note
@@ -110,3 +110,5 @@ function note {
   touch $1
   open $1
 }
+
+source trello_api_key
