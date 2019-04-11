@@ -10,3 +10,6 @@
 [submodule "vim/pack/vpetkov/start/ctrlp"]
   path = vim/pack/vpetkov/start/ctrlp
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "vim/pack/vpetkov/start/vim-completes-me"]
+	path = vim/pack/vpetkov/start/vim-completes-me
+	url = git@github.com:ajh17/VimCompletesMe.git
