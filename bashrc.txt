@@ -111,4 +111,4 @@ function note {
   open $1
 }
 
-source trello_api_key
+source /Users/vpetkov/Documents/Terminal/trello_api_key
