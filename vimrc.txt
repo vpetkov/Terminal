@@ -1,17 +1,16 @@
-execute pathogen#infect()
-filetype plugin on
 filetype indent on
 
 syntax enable
 
-highlight LineNr ctermfg=grey
-highlight EndOfBuffer ctermfg=white
+highlight LineNr ctermfg=Grey
+highlight EndOfBuffer ctermfg=White
 
 set backspace=indent,eol,start
 
 set clipboard=unnamed
 
 set number
+set relativenumber
 set ruler
 set scrolloff=2
 
