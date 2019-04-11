@@ -43,10 +43,8 @@ noremap K k
 
 imap jk <ESC>
 
-xmap \\  <Plug>Commentary
-nmap \\  <Plug>Commentary
-omap \\  <Plug>Commentary
-nmap \\\ <Plug>CommentaryLine
+vmap \\  <Plug>Commentary
+nmap \\ <Plug>CommentaryLine
 
 autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 autocmd FileType text,markdown,gitcommit setlocal spell
