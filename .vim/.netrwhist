@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/usr/local/etc/bash_completion.d'
-let g:netrw_dirhist_2='/Users/vpetkov/work/rb/monolith'
-let g:netrw_dirhist_3='/Users/vpetkov/work/rb'
-let g:netrw_dirhist_4='/Users/vpetkov/work/rb/monolith'
-let g:netrw_dirhist_5='/Users/vpetkov/work/rb'
-let g:netrw_dirhist_6='/Users/vpetkov/work/rb/monolith'
