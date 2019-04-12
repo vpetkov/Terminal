@@ -13,3 +13,6 @@
 [submodule ".vim/pack/vpetkov/start/vim-completes-me"]
 	path = .vim/pack/vpetkov/start/vim-completes-me
 	url = git@github.com:ajh17/VimCompletesMe.git
+[submodule ".vim/pack/vpetkov/start/open-github"]
+	path = .vim/pack/vpetkov/start/open-github
+	url = git@github.com:k0kubun/vim-open-github.git
