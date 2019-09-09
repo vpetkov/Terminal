@@ -10,6 +10,9 @@ export PATH=$PATH
 source ~/.git-prompt.sh
 PS1='\n\n$PWD$(__git_ps1 " \033[0;33m├%s\033[0m")\n'
 
+### LOCALE ###
+export LC_ALL=en_US.UTF-8
+
 ### ALIASES ###
 alias bashrc='vi ~/.bash_profile && . ~/.bash_profile'
 alias vimrc='vi ~/.vimrc'
