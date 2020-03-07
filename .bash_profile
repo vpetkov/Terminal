@@ -1,5 +1,7 @@
 # vim: set filetype=sh:
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 ### PATHS ###
 PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
