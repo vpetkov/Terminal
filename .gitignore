@@ -12,6 +12,7 @@ Music/
 Pictures/
 Public/
 
+
 rb/
 
 .bash_history
@@ -38,4 +39,8 @@ rb/
 .w3m/
 .yarnrc
 .zoomus
+
 Creative\ Cloud\ Files
+
+.npm/
+.vscode/
