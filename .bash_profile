@@ -116,5 +116,3 @@ function note {
   touch $1
   open $1
 }
-
-source /Users/vpetkov/Documents/Terminal/trello_api_key
