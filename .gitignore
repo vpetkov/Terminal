@@ -12,8 +12,8 @@ Music/
 Pictures/
 Public/
 
-
-rb/
+d/
+v/
 
 .bash_history
 .bash_sessions/
@@ -39,8 +39,5 @@ rb/
 .w3m/
 .yarnrc
 .zoomus
-
-Creative\ Cloud\ Files
-
 .npm/
 .vscode/

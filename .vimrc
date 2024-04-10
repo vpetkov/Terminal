@@ -10,7 +10,6 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 
 set number
-set relativenumber
 set ruler
 set scrolloff=2
 
@@ -43,9 +42,6 @@ noremap K k
 
 imap jk <ESC>
 
-vmap \\  <Plug>Commentary
-nmap \\ <Plug>CommentaryLine
-
 autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 autocmd FileType text,markdown,gitcommit setlocal spell
 
@@ -54,8 +50,3 @@ autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
   \ | endif
-
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_prompt_mappings = {
-      \ 'AcceptSelection("e")': ['<c-b>'],
-      \ }

@@ -1,5 +1,3 @@
-# vim: set filetype=sh:
-
 require 'irb/completion'
 
 IRB.conf[:AUTO_INDENT] = true
