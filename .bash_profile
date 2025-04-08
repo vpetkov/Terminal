@@ -1,8 +1,9 @@
 PATH="/opt/homebrew/bin:$PATH"
 export HOMEBREW_NO_EMOJI=1
 
-source /opt/homebrew/Cellar/git/2.44.0/etc/bash_completion.d/git-completion.bash
-source /opt/homebrew/Cellar/git/2.44.0/etc/bash_completion.d/git-prompt.sh
+for script in /opt/homebrew/Cellar/git/*/etc/bash_completion.d/git-{completion,prompt}.sh; do
+  [ -f "$script" ] && source "$script"
+done
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 PS1='\n\n$PWD $(__git_ps1 "├%s")\n> '
