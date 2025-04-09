@@ -7,7 +7,8 @@ https://github.com/settings/keys
 
 https://brew.sh
 
-`brew install bash git node rbenv ruby ruby-buld vim`
+`brew install bash git rbenv vim` 
+`brew install bash-completion@2`
 
 ---
 
