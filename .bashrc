@@ -7,7 +7,7 @@ if [ -f /opt/homebrew/share/bash-completion/bash_completion ]; then
   source /opt/homebrew/share/bash-completion/bash_completion
 fi
 
-for script in /opt/homebrew/Cellar/git/*/etc/bash_completion.d/git-{completion,prompt}.sh; do
+for script in /opt/homebrew/etc/bash_completion.d/git-{completion,prompt}.sh; do
   [ -f "$script" ] && source "$script"
 done
 export GIT_PS1_SHOWUNTRACKEDFILES=true
