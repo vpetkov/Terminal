@@ -43,3 +43,5 @@
 	prompt = false
 [color]
   ui = auto
+[pull]
+	rebase = true
