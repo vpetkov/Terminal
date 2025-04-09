@@ -21,6 +21,9 @@ alias gitconfig='vi ~/.gitconfig'
 alias hosts='sudo vi /etc/hosts'
 alias sshconfig='vi ~/.ssh/config'
 
+alias python='python3'
+alias pip='pip3'
+
 alias vi='vim -p'
 
 alias ls='ls -F'
